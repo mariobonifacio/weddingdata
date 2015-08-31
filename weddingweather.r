@@ -1,6 +1,6 @@
 ## Airport URL format http://www.wunderground.com/history/airport/LGA/2015/10/19/PlannerHistory.html?dayend=25&monthend=10&yearend=2015&format=1
 
-weddingweather <- function(weddate = "10/22/2015",airport = "KLOM"){
+weddingweather <- function(weddate = "10/22/2015",airportcode = "LGA"){
 
 # Install and load necessary packages
 # install.packages("dplyr","lubridate")
@@ -14,7 +14,7 @@ maxtest <- weddate + days(3)
 
 
 testurl <- paste('http://www.wunderground.com/history/airport/'
-     ,airport
+     ,airportcode
      ,'/'
 	 ,year(mintest)
 	 ,'/'
